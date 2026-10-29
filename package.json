@@ -1,0 +1,14 @@
+{
+  "name": "adoptar-cifrado-documentos",
+  "version": "1.0.0",
+  "description": "Módulo de prueba: cifrado y recuperación de documentos de identidad ficticios con AES-256-GCM (AO2 - Seguridad y Protección de los Datos)",
+  "type": "module",
+  "engines": { "node": ">=20.6" },
+  "scripts": {
+    "generar-clave": "node src/generar-clave.js",
+    "cifrar": "node --env-file=.env src/cli.js cifrar",
+    "descifrar": "node --env-file=.env src/cli.js descifrar",
+    "test": "node --test --test-reporter=spec"
+  },
+  "license": "UNLICENSED"
+}
